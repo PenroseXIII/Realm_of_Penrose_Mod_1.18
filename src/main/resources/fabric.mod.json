@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "realmofpenrosemod",
+  "version": "${version}",
+
+  "name": "Realm of Penrose Mod",
+  "description": "Vanilla builders mod used on the realm of penrose",
+  "authors": [
+    "Penrose XIII"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.penrose.realmofpenrose.RealmofPenrose"
+    ]
+  },
+  "mixins": [
+    "realmofpenrose.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
